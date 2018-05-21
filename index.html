@@ -1,1 +1,69 @@
-test May 20,2018
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<script type="text/javascript" src="./scripts/jQuery.js"></script>
+</head>
+
+<body>
+
+	<div class="container-fluid header-section">
+		<div class="row"> <!--row is a built in class to give a full sized row in bootstrap. In one row there are 12 columns and we can create any number of columns-->
+			<div class="col -md-2"> <!--also built in class, gives 4 columns to our division. there are 8 colums remaining now--> 
+				<img src="./img/a.gif " alt="My Image" class="img-responsive"> <!--alt gives the alternate message in case pic cannot be displayed, the class here makes the image responsive-->
+
+			</div>
+			<div class="col-md-10">
+				<h1 class="text-uppercase name">cyril thomas</h1> <!--bootstrap class which converts all characters to upper case-->
+				 <h3 class="designation"><em>Full Stack Developer</em></h3> 
+			</div>
+		</div><hr><!--adds the white line below the text-->
+	</div> <!--division for header section -->
+
+	<div class="container-fluid experience-section">
+		<h1 class="text-uppercase text-center"><em><strong>experience</strong></em></h1>
+		<div class="row">
+			<div class="col-md-12">
+				<ul>	<!--unordered list can be created with the tag ul-->
+
+					<li>
+						<h4><strong>University of Waterloo</strong></h4><br> <!--br tag used to break the line-->
+						<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h5><hr> <!--hr makes the horizontal line-->
+					</li>
+
+				</ul>
+			</div>
+		</div>				
+	</div> <!--division for expereience section-->
+
+	<div class="container-fluid projects-section">
+	</div> <!--division for projects section-->
+
+	<div class="container-fluid skills-section">
+		<h1 class="text-uppercase text-center"><em><strong>skills</strong></em></h1>			<!--text-uppercase and text-center are two seperate classes-->
+		<div class="row skills-section-images">
+			
+		</div>
+	</div> <!--division for skills section-->
+
+	<div class="container-fluid footer-section">
+		<div class="row">
+			<div class="col-md-4">
+				<h6><strong>Copyright &copy; 2018 Cyril Thomas</strong></h6>
+			</div>
+			<div class="col-md-8">
+				<a href="https://www.facebook.com/12345cyril"><span class="link"><strong>Facebook</strong></span></a>
+				<a href=""><span class="link"><strong>Google</strong></span></a>
+				<a href=""><span class="link"><strong>Twitter</strong></span></a>
+				<a href=""><span class="link"><strong>Github</strong></span></a>
+				<a href=""><span class="link"><strong>Linkedin</strong></span></a>
+			</div>
+	</div> <!--division for footer section-->
+
+	<script type="text/javascript" src="./scripts/helper.js"></script>
+</body>
+</html> 

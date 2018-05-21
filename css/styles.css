@@ -1,0 +1,46 @@
+.header-section{
+	background-color: #0099FF; 
+	padding-top: 10px; /*gives space between the top and the gif image*/ 
+	padding-left: 50px;
+	padding-right: 50px;
+
+}
+
+.name{
+	color: white;
+}
+
+.designation{
+	color: red;
+}
+
+.experience-section{
+	background-color: : white;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.skills-section{
+	background-color: : white;
+	padding-right: 50px;
+	padding-left: 80px;
+	padding-bottom: 20px;
+
+}
+
+.footer-section{
+	background-color: #0099FF;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.link{
+	padding-left: 50px;
+	padding-right: 50px;
+	color: grey;
+	transition: all .5s ease-in-out;
+}
+
+.link:hover{
+	transform:scale(1.2); /*hover effect not working for some reason*/
+}
