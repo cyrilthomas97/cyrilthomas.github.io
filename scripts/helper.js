@@ -45,3 +45,29 @@ for(var i=0; i<experience_array.length; i ++){
 	$('.experience-section-info').append(experience_new);
 
 }
+
+var projects = '<li><h3>%data%</h3><div class="row"><div class="col-md-3"><img src="./img/%data1%.png" alt="project-image-1" class="img-responsive"></div><div class="col-md-9"><h5>%data2% </h5></div></div></li>';
+
+var projects_array = [
+	{
+		 name: 'Sideproject',
+		 img: 'dog',
+		 info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h5>'
+	},
+
+	{
+		 name: 'Out of Names',
+		 img: 'rabbit' ,
+		 info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h5>'
+	}
+
+];
+
+var projects_new = '';
+
+for(var i=0; i<projects_array.length; i++){
+	projects_new = projects.replace('%data%', projects_array[i]['name']);
+	projects_new = projects_new.replace('%data1%', projects_array[i]['img']);
+	projects_new = projects_new.replace('%data2%', projects_array[i]['info']);
+	$('.projects-section-info').append(projects_new);
+}
